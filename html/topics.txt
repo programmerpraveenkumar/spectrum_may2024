@@ -1,0 +1,19 @@
+class 
+    classname for the elements
+
+id
+    id for the element
+    value shud be uniqe.cant be added to multiple elements with same value.
+
+css
+    cascading style sheet
+    1.external->load css from external file
+    2.internal-> in the html page itself add css prpos
+    3.inline-> on the element itself can apply the css
+    
+
+position:
+    fixed
+    absolute    
+    relative
+    sticky
