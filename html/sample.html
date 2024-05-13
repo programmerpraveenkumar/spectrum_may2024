@@ -6,6 +6,11 @@
         <meta property="og:title" content="San Roque 2014 Pollos" />
         <!--  -->
     <style>
+        /* 
+            tagname
+            classname
+            id
+        */
         /* dot represents the class name */
         .menu_li{
             display: inline-block;
@@ -40,17 +45,50 @@
             text-transform:uppercase ;
         }
         .clock{
+            /* absolute can be positioned and not scrollable */
             position: fixed;
             top:20px;
             right:20px;
             background-color: red;
         }
         .clock2{
+             /* absolute can be positioned and scrollable */
             position: absolute;
             top:150px;
             right:20px;
             background-color: red;
         }
+        .clock3_parent{
+            position: relative;
+            width: 50%;
+        }
+        .clock3{
+            /* if any parent element has position:relative,then absolute can be controlled from parent. */
+            position: absolute;
+            top:150px;
+            right:20px;
+            background-color: red;
+        }
+        .taj_img{
+            position: relative;
+        }
+        .taj_txt{
+            position: absolute;
+            left: 10px;
+            top:20px;
+            color: #fff;
+            font-size: 30px;;
+        }
+        /* 
+            id shuld be unique
+            can access by #.(hash symbol)
+         */
+        #h5_id{
+            color: cadetblue;
+            font-style: italic;
+        }
+
+
     </style>
  
     </head>
@@ -73,13 +111,22 @@
             10:56Am
         </p>
       </div>
+      <div class="clock3_parent">
+        <div class="clock3">
+            <p>
+                cock3:: 10:56Am
+            </p>
+          </div>
+      </div>
         <!-- heading tags -->
         <h1  class="welcome_h1">Welcome html</h1>
         <h1 class="welcome_h1">Welcome React session</h1>
         <h2>Welcome React session</h2>
         <h3>Welcome React session</h3>
         <h4>Welcome React session</h4>
-        <h5>Welcome React session</h5>
+        <h5 id="h5_id">Welcome React session</h5>
+        <h5 id="h5_id1">Welcome React session</h5>
+        <h6>Welcome React session</h6>
         <h6>Welcome React session</h6>
         <div>
             <h1>Welcome html</h1>
@@ -143,6 +190,11 @@
          </p>
          <h1 style="background-color: red;display: inline-block;">this is h1</h1>
          <span style="background-color: aqua;">this is span</span>
+         <div class="taj_img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/800px-Taj_Mahal_%28Edited%29.jpeg" alt="">
+            <span class="taj_txt">Tajmahal</span>
+         </div>
+         
          <footer style="background-color: #c9d7e3;">
             <p class="copyright" >Copyright-2024</p>
             <ul>

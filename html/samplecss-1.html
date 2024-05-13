@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* whn child elements have float property.parent element lose its height */
+        .h1_parent{
+            background-color: red;
+            /* height: 80px; */
+            overflow: hidden;
+        }
+        h1{
+            color: #716d6d;
+            float: left;
+            width: 20%;
+        }
+        .form_div{
+            text-align: center;
+            border: 5px solid #000;
+            width: 30%;
+            margin: 10px auto;
+        }
+        .input_div{
+            margin:1%;
+        }
+        /* element wch has both of the classes */
+        .input_div.btn{
+            text-align: center;
+        }
+        .para1{
+            height: 100px;
+            background-color: aqua;
+            /*
+             when content is overflow more than the height,then
+             `overflow:hidden` wll hide the content to the element
+             `overflow:scoll` will create scrollbar to the element.
+             */            
+            overflow: scroll;
+        }
+        .div_3{
+                background-color: bisque;
+                width: 25%;
+                margin-bottom: 10px;
+                padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="h1_parent">
+        <h1>this is h1</h1>
+        <h1>this is h1</h1>
+        <h1>this is h1</h1>
+    </div>
+
+    <div class="form_div">
+        <h2>Login form</h2>
+        <div class="input_div">
+            <input type="text" placeholder="Enter UserName">
+        </div>
+        <div class="input_div">
+            <input type="text" placeholder="Enter Password">
+        </div>
+        <div class="input_div btn">
+            <input  type="button" value="Login">
+        </div>
+       
+    </div>
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia labore nemo placeat! Consectetur voluptas quod adipisci omnis architecto iusto, veritatis dolores vero necessitatibus, assumenda cum ea numquam vel harum quaerat.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quam velit repellat enim facere eum molestiae assumenda, error perspiciatis repudiandae ex veritatis, quidem amet optio consequuntur illum. Quae, ex iste!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae maxime laudantium totam ratione? Ab, quas. Aperiam veniam minima numquam! Tempore, eveniet officia. Consequatur voluptas non, ea adipisci distinctio ipsa placeat?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea mollitia eligendi praesentium hic et temporibus, quo laboriosam! Fugit obcaecati eos nisi praesentium, ducimus ad fugiat nihil labore inventore id!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime commodi suscipit corporis numquam quia distinctio porro enim! Iste doloremque animi porro corporis minus optio rem illum dolores iusto quibusdam.\
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor, illo qui sapiente neque, exercitationem tenetur reiciendis cumque ex repellat iure voluptatum vero? Beatae repellendus, dolorem nesciunt fuga ea veritatis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sint suscipit repellat rem, accusamus sed aut consectetur dignissimos, numquam autem tenetur voluptates nostrum distinctio ad dolorem architecto fugiat exercitationem nulla.
+    </p>
+    <div class="div_3">
+        this is div
+    </div>
+    <div class="div_3">
+        this is div
+    </div>
+</body>
+</html>
