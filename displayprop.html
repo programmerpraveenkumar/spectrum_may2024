@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parentDiv{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+        }
+        .parentDiv .divChild{
+            background-color: aqua;
+            width: 20%;
+            border: 1px solid red;
+        }
+        .parentDiv1{
+            display: grid;
+            grid-template-columns:auto auto auto;
+        }
+        .parentDiv1 .divChild{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parentDiv">
+        <div class="divChild">div1 text</div>
+        <div class="divChild">div2 text</div>
+        <div class="divChild">div3 text</div>
+        <div class="divChild">div4 text</div>
+        <div class="divChild">div5 text</div>
+        <div class="divChild">div6 text</div>
+        <div class="divChild">div7 text</div>
+    </div>
+    
+    <div class="parentDiv1">
+        <div class="divChild">div1 text</div>
+        <div class="divChild">div2 text</div>
+        <div class="divChild">div3 text</div>
+        <div class="divChild">div4 text</div>
+        <div class="divChild">div5 text</div>
+        <div class="divChild">div6 text</div>
+        <div class="divChild">div7 text</div>
+
+    </div>
+</body>
+</html>
