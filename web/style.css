@@ -1,3 +1,6 @@
+body{
+   font-family: sans-serif;
+}
 header{
     display: flex;
     background-color: aliceblue;
@@ -63,5 +66,30 @@ footer p{
     color: #7d9fcb;
 }
 .about-content{
+    font-size: 20px;
+}
+
+#contact_section h1{
+    text-align: center;font-size: 30px;
+}
+
+/* apply to direct child */
+#contact_section > div
+{
+    display: flex;background: cornflowerblue;    
+}
+.map{
+    width:50%;
+}
+.contact_input{
+    width: 47%;
+}
+
+.contact_input input{
+    width: 100%;margin: 10px;padding: 10px;
+}
+.contact_input .address{
+    margin-left: 13px;
+    color: #fff;
     font-size: 20px;
 }
