@@ -8,9 +8,8 @@ header{
     margin-bottom:5px ;
 }
 ul.menu,ul.search{
- 
     padding: 0px;
-margin: 0
+    margin: 0
 }
 ul.menu{
     width: 70% ;
@@ -22,16 +21,18 @@ input.search_btn{
 }
 ul.menu li,.search li{
     display: inline-block;
-    margin: 0 10px;            
+    /* margin: 0 10px;             */
 }
-li.active{
-    background: #007aff99;
-}
+
 li.active a{
     color: #fff;
 }
-ul.menu li a{
+li a{
     text-decoration: none;
+}
+li.active a{
+    background: #007aff99;
+    text-decoration: underline;
 }
 section.content{
     display: grid;
@@ -51,8 +52,7 @@ footer p{
     text-align: center;
 }
 .emp_list{
-    display: flex;
-    
+    display: flex;    
 }
 .emp_list div{
     width: 20%;
@@ -92,4 +92,43 @@ footer p{
     margin-left: 13px;
     color: #fff;
     font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    ul.menu li{
+        display: block;
+        margin: 10px 0;
+        width: 50%;
+    }
+    ul.menu li a{
+        font-size:25px;
+    }
+    header{
+     flex-direction: column;
+    }
+    .about h2{
+        text-align: center;
+    }
+    .emp_list{
+        flex-wrap: wrap;
+    }
+    .emp_list div{
+        width: 50%;
+    }
+    .emp_list div img{
+            width: 50%;
+    }
+    section.content{     
+        grid-template-columns: 100%;
+    }
+    #contact_section > div{
+        flex-direction:column;
+    }
+    .map{
+        width:100%;
+    }
+    .contact_input{
+        width: 98%;
+    }
 }

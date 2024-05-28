@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    header{
+    display: flex;
+    background-color: aliceblue;
+    padding: 10px;
+    margin-bottom:5px ;
+}
+ul.menu,ul.search{
+    padding: 0px;
+    margin: 0
+}
+ul.menu{
+    width: 70% ;
+}
+input.search_btn{
+    background: #99caf4;
+    color: #fff;
+    border: 2px solid #ffe7e7;
+}
+ul.menu li{
+    display: inline-block;
+    margin: 0 10px;   
+    
+}
+.search li{
+    list-style-type: none;         
+}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul class="menu">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="search">
+                <li> 
+                    <input type="text" placeholder="Enter Name">
+                    <input class="search_btn" type="button" value="Search">
+                </li>
+            </ul>
+        </header>
+        
+     
+    </div>
+</body>
+</html>
+<!-- 
+    1.each html for different devices
+    2.Responsive web design
+ -->

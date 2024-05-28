@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+/*
+ url
+ http method(get,post,put,patch,delete)
+ data to sent(queryParam,requestBody)
+*/
+/*
+
+GET
+page=2
+*/
+async function getRes(){
+    let res = await fetch("https://reqres.in/api/users?page=2",{method:"GET"})
+    //let jsonRes = res.json();
+    console.log(jsonRes);
+}
+async function postRes(){
+    let res = await fetch("https://reqres.in/api/users",{method:"POST",body:JSON.stringify({})})
+    console.log(res);
+}
+// getRes();
+// postRes();
+console.log("this is another line");
+</script>
+</head>
+<body>
+    <button onclick="getRes()">Click to get</button>
+    <button  onclick="postRes()">Click to Post</button>
+</body>
+</html>

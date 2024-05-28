@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myanimation {
+            from{
+                background-color: red;
+                font-size: 10px;
+            }
+            to{
+                background-color: rgb(1, 69, 255);
+                font-size: 30px;
+            }
+        }
+        .div1{
+            animation: myanimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            color: #fff;
+        }
+
+        @keyframes myanimation1 {
+            0%{
+                background-color: red;
+            }
+            20%{
+                background-color: rgb(0, 255, 13);
+            }
+
+            40%{
+                background-color: rgb(0, 30, 255);
+            }
+            80%{
+                background-color: rgb(255, 0, 204);
+            }
+            100%{
+                background-color: rgb(255, 0, 0);
+            }
+        }
+        .div2{
+            animation: myanimation1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            color: #fff;
+            padding: 20px;
+            font-size: 30px;;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">this is sample div</div>
+    <div class="div2">this is sample div</div>
+</body>
+</html>

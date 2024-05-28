@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("this is intro of js");
+        console.log("this is another intro of js");
+        /*
+        var->global scope
+        let->block scope(local)
+        const->
+            define the constant;
+        */
+       var firstname = 'hello javascript';
+       firstname ='hello java';
+       var firstname = 'hello javascript';
+       console.log(firstname);
+
+       let lastName = 'hello mongodb';
+       lastName ='hello mysql';
+    //    let lastName = "HELLO mongodb";//let will not redeclare
+       console.log(lastName);
+
+
+       const country = 'india';
+       //country = 'wefe';//will not update.
+       console.log(country);
+       
+       function add(a,b){
+            console.log(a+b);
+       }
+       add(10,12);
+       add(20,12);
+       function addBy10(a){
+            console.log(a+10);
+       }
+       addBy10(5);//15
+       addBy10(15);//25
+
+       function mul(a,b){
+            let result = a*b;
+            console.log(result);
+            return result;
+       }
+       mul(10,8);
+       function getName(){
+            let val = document.getElementById("name").value;
+            if(val !=''){
+                document.getElementById("txt_id").innerHTML = 'textbox value is '+val;
+                // console.log(val);
+            }else{
+                //writing into the html elements
+                document.getElementById("txt_id").innerHTML = 'Textbox should not be empty'
+                // alert('text box shuld not be empty!!');
+            }            
+       }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Enter Name" id="name"/>
+        <button onclick="getName()">Click</button>
+        <h1 id="txt_id"></h1>
+    </div>
+</body>
+</html>

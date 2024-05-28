@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Person{
+            name;
+            age
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            setDetails(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            printDetails(){
+                console.log(this.name,this.age);
+            }
+        }
+
+        //creating object
+        let person = new Person("test",45);
+        //calling methods using object
+        // person.setDetails("test",45);
+
+        //calling methods using object
+        person.printDetails();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

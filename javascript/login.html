@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function validate(){
+            let email = document.getElementById("email").value;
+            let pwd = document.getElementById("pwd").value;
+            if(email ==''){
+                alert("email should not be empty")
+            }else if(pwd == ''){
+                alert("password should not be empty");
+            }else{
+                alert('everything is fine.');
+            }
+    }
+    </script>
+    
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Enter Email" id="email">
+    </div>
+    <div>
+        <input type="password" placeholder="Enter Password" name="" id="pwd">
+    </div>
+    <div>
+        <input type="button" onclick="validate()" value="Click"/>
+    </div>
+</body>
+</html>

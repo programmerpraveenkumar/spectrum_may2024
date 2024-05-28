@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(a,b){
+            var res = a+b;
+            console.log(res);
+        }
+        add(10,15);//a=10,b=15;
+        add(40,15);
+        add(20,15);
+        
+        function printHello(){
+            console.log("hello..");
+        }
+        printHello();
+        printHello();
+        /*
+        create a functioin with one param(string)
+        prints the param in the console.
+        */
+
+        var email ='test@gmail.com';
+        function message(){
+            console.log(email);
+            email ='update@gmaio.com'
+            console.log(email);
+        }
+        message();
+        console.log(email);
+
+        let email1 ='test@gmail.com';
+        function message1(){
+            let email1 ='update@gmaio.com';
+            console.log(email1);
+        }
+        message1();
+        console.log(email1);
+        const myCountry = 'india';//constant declaration..
+        //myCountry = 'adfas';//error 
+        console.log(myCountry);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
