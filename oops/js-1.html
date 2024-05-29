@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Sample{
+                name
+                address;
+                constructor(name,address){
+                    this.name = name;
+                    this.address = address;
+                }
+                printDetails(){
+                    console.log(this.name,this.address)
+                }
+        }
+        let s = new Sample("292024","sample address");
+        // s.name = "29may";
+        // s.address  = "29may address";
+        s.printDetails();
+
+        class A{
+            address;
+            printDetails(){
+                console.log(this.address);
+            }
+        }
+
+        //inherting the prps from A to B
+        class B extends A {
+            
+        }
+
+         let b = new B();   
+         b.address = "for b object";
+         b.printDetails();
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // URL --> 
+        // http method->get,post,put,delete
+        // data to send->
+/*
+https://reqres.in/api/users?page=2
+GET
+*/
+
+
+/*
+https://reqres.in/api/users
+POST
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+*/
+
+/*
+await waits till the action completes
+*/
+async function getApi(){
+    let data = await fetch("https://reqres.in/api/users?page=2",{method:"GET"})
+    let serverData = await data.json();//extracting the json from server response
+    console.log(serverData);
+}
+async function postApi(){
+    let data = {
+        "name": "baskar",
+        "job": "manager"
+    }
+    let serverRes = await fetch("https://reqres.in/api/users",
+    {method:"POST",
+    headers:{'content-type':'application/json'},
+    body:JSON.stringify(data)
+    })
+    let serverData = await serverRes.json();//extracting the json from server response
+    console.log(serverData);
+}
+    </script>
+</head>
+<body>
+    <button onclick="getApi()">Get Api</button>
+    <button onclick="postApi()">post Api</button>
+</body>
+</html>
