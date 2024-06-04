@@ -1,5 +1,6 @@
 import About from './About';
 import './App.css';
+import App2 from './App2';
 import Contact from './Contact';
 import Header from './Header';
 import Home from './Home';
@@ -15,7 +16,9 @@ const routerConfig = createBrowserRouter([
     "path":"/about",element:<About/>
     },{
       "path":"/contact",element:<Contact/>
-      }
+      },{
+        "path":"/app2",element:<App2/>
+        }
 ]);
 
 

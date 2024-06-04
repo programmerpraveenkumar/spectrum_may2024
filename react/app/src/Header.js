@@ -3,7 +3,7 @@ export default function Header(){
         <>
             <a href="/home">Home</a>
             <a href="/about">About</a>
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
         </>
     )
 }
