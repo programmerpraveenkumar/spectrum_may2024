@@ -8,11 +8,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home2 from './Home2';
 
 const routerConfig = createBrowserRouter([
   {
-  "path":"/home",element:<Home/>
-  },{
+    "path":"/home",element:<Home/>
+    },{
+      "path":"/home2",element:<Home2/>
+      },{
     "path":"/about",element:<About/>
     },{
       "path":"/contact",element:<Contact/>

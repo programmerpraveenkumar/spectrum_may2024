@@ -7,6 +7,7 @@ function Contact(){
     const [name,setName] = useState('this s react app');
     const [email,setEmail] = useState('test@gmail.com');
     const [nameList,setNameList] = useState(['testerr','test','test2','test3']);
+    const [personDetails,setPersonDetails] = useState([]);
     const [personDetailList,setPersonDetailList] = 
     useState([
         {"name":"sfwe",age:45,"mobile":"12346464"},
@@ -17,6 +18,12 @@ function Contact(){
     let nameRef = useRef();
     let emailRef = useRef();
     let msgRef = useRef();
+    const getApi=async ()=>{
+        let serverData = await fetch("https://reqres.in/api/users?page=2",{method:"GET"});
+        let json = await serverData.json();
+        setPersonDetails(json['data']);
+        console.log(json);
+    }
     const handleClick=()=>{
         //read the value from the input box
         let firstname = nameRef.current.value;
@@ -53,6 +60,11 @@ function Contact(){
                     return <h2>{obj.name}--{obj.age} --{obj.mobile}</h2>
             })
           }
+           {
+            personDetails.map((obj)=>{
+                    return <h2>{obj.first_name}--{obj.email} --{obj.last_name}</h2>
+            })
+          }
             <section className="form">
             <h1>Contact Form</h1>
             <div>
@@ -66,6 +78,7 @@ function Contact(){
             </div>
             <div>
                 <button onClick={()=>handleClick()}>Send</button>    
+                <button onClick={()=>getApi()}>Call Api</button>    
             </div>
             </section>
         </>
