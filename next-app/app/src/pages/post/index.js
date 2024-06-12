@@ -1,9 +1,14 @@
 import Header from "../Header";
 import styles from '../../css/style.css';
+import { NextSeo } from 'next-seo';
 export default function FirstPost(props) {
    return (
       <>
               <Header/>
+              <NextSeo
+      title="Post Page"
+      description="A short description goes here."
+    />
             {props.users.map((userObj)=>{
                return(<>
                    <h1>{userObj.first_name}</h1>
